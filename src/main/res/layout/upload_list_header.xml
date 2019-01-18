@@ -36,15 +36,8 @@
         android:layout_height="wrap_content"
         android:ellipsize="middle"
         android:textColor="@color/color_accent"
-        tools:text="Current (2)" />
-
-    <ImageView
-        android:id="@+id/upload_list_delete"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
-        android:contentDescription="@string/delete_entries"
-        android:src="@drawable/nav_trashbin" />
-
+        android:drawableEnd="@drawable/nav_trashbin"
+        tools:text="Current (2)"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/nav_trashbin" />
 </LinearLayout>

@@ -92,7 +92,7 @@ public class UploadListAdapter extends SectionedRecyclerViewAdapter<SectionedVie
                                                      group.getGroupName(), group.getGroupItemCount()));
         headerViewHolder.title.setTextColor(ThemeUtils.primaryAccentColor(parentActivity));
 
-        headerViewHolder.delete.setOnClickListener(v -> {
+        headerViewHolder.title.setOnClickListener(v -> {
             switch (group.type) {
                 case CURRENT:
                     FileUploader.FileUploaderBinder uploaderBinder = parentActivity.getFileUploaderBinder();
@@ -568,9 +568,6 @@ public class UploadListAdapter extends SectionedRecyclerViewAdapter<SectionedVie
     static class HeaderViewHolder extends SectionedViewHolder {
         @BindView(R.id.upload_list_title)
         TextView title;
-
-        @BindView(R.id.upload_list_delete)
-        ImageView delete;
 
         HeaderViewHolder(View itemView) {
             super(itemView);
